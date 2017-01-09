@@ -1,0 +1,113 @@
+@charset 'UTF-8';    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+html
+{
+    font-size: 62.5%;
+}
+header{
+  background-image:url("../images/header-image.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  padding-top:10%
+  
+}
+
+.header-text{
+    background-color: rgba(0,200,70,0.4);
+    width:250px;
+    margin-left:auto;margin-right:auto;
+    margin-top:20px;
+    padding:8px;
+  
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+    
+    /* ベースカラー*/ 
+}
+
+#shokai .container
+{
+    display: -webkit-flex;
+    display:         flex;
+
+    justify-content: space-between;
+    
+}
+.introduction{
+    text-align:center;
+    padding:40px;
+}
+.text-center {
+    text-align: center;
+}
+.shokai-box{
+    margin:10px;
+}
+.midash{
+    font-size:2rem;
+    font-weight:bold;
+    padding:4px;
+    margin:10px 30px 0px 30px;
+    background-color: rgba(0,200,400,0.1);
+    
+}
+h3{
+    padding:20px;
+    background-color:#9fbdf4;
+    margin-bottom:5px;
+
+    border-radius:5px;
+}
+  .radius-box{
+      background-color: #f8e58c;
+      border-radius: 10px;
+  }
+  .button{
+      width:250px;
+      margin-left:auto;margin-right:auto;
+      background-color:rgba(40,100,300,0.1);
+      border-radius:10px;
+      padding:5px;
+  }
+  .content1{
+      background-image:url("../images/adachi.jpg");
+      color:#FFFFFF;
+  }
+   .content2{
+      background-image:url("../images/sumidaku.jpg");
+      color:#FFFFFF;
+  }
+  .content3{
+      background-image:url("../images/katushikaku.jpg");
+      color:#FFFFFF;
+  }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  header{
+  background-image:url("../images/header-image.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  padding-top:10%;
+  background-image:url("../images/header-image.jpg");
+}
+ 
+ footer{
+     padding-bottom:10px;
+ }
+
+}
